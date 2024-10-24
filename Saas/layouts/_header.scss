@@ -1,0 +1,30 @@
+//Mobile version//
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & .border-shadow-header{
+            width: 100%;
+            text-align: center;
+            box-shadow: $box-shadow-light;
+            position: sticky;
+        }
+
+        & img {
+            width: 197px;
+            height: 36px;
+            margin: 20px;
+        }
+
+        & .formulaire {
+            width: 100%;
+            background-color: $background-grey-dark;
+            box-shadow: $box-shadow-strong;
+            padding: 15px;
+        }
+    }
+
+

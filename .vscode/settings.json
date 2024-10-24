@@ -1,0 +1,14 @@
+
+{"liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",  // Format du CSS généré (expanded, compressed, etc.)
+      "extensionName": ".css",  // Extension du fichier généré
+      "savePath": "/assets",  // Chemin vers le dossier où le CSS sera sauvegardé
+      "savePathReplacementPairs": {
+        "main.css": "style.css"  // Remplace main.css par style.css
+      }
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,  // Option pour générer une source map (facultatif)
+  "liveSassCompile.settings.autoprefix": true  // Ajoute des préfixes pour la compatibilité des navigateurs (facultatif)
+}
