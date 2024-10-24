@@ -1,8 +1,7 @@
 //Mobile version//
 
     header {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: center;
         align-items: center;
         

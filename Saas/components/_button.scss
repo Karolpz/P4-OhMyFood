@@ -3,7 +3,39 @@
     background: $background-gradient;
     color: white;
     padding: 15px;
-    font-weight: 500;
     border: none;
-    box-shadow: $shadow-button
+    box-shadow: $shadow-button-purple;
+}
+
+.button-rounded-white {
+    position: relative;
+    border-radius: 20px;
+    background-color: $background-grey-light;
+    border: none;
+    box-shadow: $shadow-button-white;
+    padding: 30px;
+    width: 100%;
+}
+
+.button-number {
+    position: absolute;
+    background-color: $primary-color;
+    border-radius: 50%;
+    color: white;
+    padding: 3px 8px;
+    size: 14px;
+    left: -12px;
+}
+
+.new-button {
+    position: absolute;
+    background-color: $tertiary-color;
+    color: #008766;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    box-shadow: $box-shadow-light;
+    right: 12px;
+    top: 13px;
 }

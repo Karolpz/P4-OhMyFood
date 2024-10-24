@@ -8,17 +8,18 @@ $background-white : #FFFFFF;
 $background-grey-dark: #EAEAEA;
 $background-grey-light: #F6F6F6;
 $background-black: #353535;
-$background-gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-;
+$background-gradient: linear-gradient(180deg, #FF79DA -11.44%,  #9356DC 123.93%);
 
 //Box shadow
 $box-shadow-light: 0px 2px 4px 0px #00000026;
 $box-shadow-strong: 0px 4px 4px 0px #00000040;
-$shadow-button: 0px 4px 10px 0px #00000040;
-
-
+$shadow-button-purple: 0px 4px 10px 0px #00000040;
+$shadow-button-white:0px 4px 15px 0px #00000026;
 
 //icon colors
 $location-icon :$background-black;
 $buttons-icon :#7E7E7E;
 $footer-icon :$background-white;
+    //icon sizes
+    $big-icon: 20px;
+    $small-icon : 13px;

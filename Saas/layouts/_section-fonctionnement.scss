@@ -1,0 +1,13 @@
+.fonctionnement {
+    @include flex-column;
+    gap: 20px;
+
+    & .buttons-flex{
+        display: flex;
+        gap: 25px;
+    }
+    
+    & button:hover i {
+        color: $primary-color;
+    }
+}

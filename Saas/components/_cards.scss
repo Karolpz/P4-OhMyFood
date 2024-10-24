@@ -1,0 +1,27 @@
+//Cards restaurants//
+.card-restaurant {
+    @include cards;
+    flex-direction: column;
+    position: relative;
+    
+    & img {
+        object-fit: cover;
+        height: 174px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px
+    }
+
+    & .card-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+        &.card-text {
+            @include flex-column
+        }
+
+    }
+}
+

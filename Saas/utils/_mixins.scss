@@ -1,0 +1,13 @@
+@mixin cards{
+    border-radius: 15px;
+    display:flex;
+    box-shadow: $shadow-button-white;
+    width: 100%;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+

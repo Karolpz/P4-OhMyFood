@@ -1,7 +1,7 @@
 .reservation {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    background-color: $background-grey-light;
 }

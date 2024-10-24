@@ -1,0 +1,29 @@
+footer {
+    @include flex-column;
+    background: $background-black;
+    color: white;
+    gap: 20px;
+    
+    & img {
+        filter: invert(1);
+        width: 98px;
+        height: 18px;
+    }
+
+    & ul {
+        @include flex-column;
+        gap: 5px;
+
+        & li {
+            display: flex;
+
+            &.link-bold {
+                gap: 20px;
+            }
+
+            &.link-thin {
+                font-weight: 300;
+            }
+        }
+    }
+}

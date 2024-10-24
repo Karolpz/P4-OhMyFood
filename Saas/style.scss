@@ -1,5 +1,12 @@
 //Import utils
 @import "./utils/variables";
+@import "./utils/mixins";
+
+//Import components
+@import "./components/form";
+@import "./components/button";
+@import "./components/icons";
+@import "./components/cards";
 
 // Import base
 @import "./base/typography";
@@ -9,10 +16,11 @@
 //Import layout
 @import "./layouts/header";
 @import "./layouts/section-reserver";
+@import "./layouts/footer";
+@import "./layouts/section-fonctionnement";
+@import "./layouts/section-restaurants";
 
-//Import components
-@import "./components/form";
-@import "./components/button";
+
 
 
 @media (max-width: 767.98px) {
