@@ -18,6 +18,12 @@ form input {
   padding: 15px;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
+  transition: opacity 300ms 150ms, box-shadow 400ms 150ms;
+}
+.button-rounded-purple:hover {
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .button-rounded-white {
@@ -28,6 +34,7 @@ form input {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   padding: 30px;
   width: 100%;
+  cursor: pointer;
 }
 
 .button-number {
@@ -36,7 +43,7 @@ form input {
   border-radius: 50%;
   color: white;
   padding: 3px 8px;
-  font-size: 14px;
+  size: 14px;
   left: -12px;
 }
 
@@ -62,8 +69,26 @@ form input {
   color: #353535;
 }
 
-.fa-heart {
+.fa-regular {
   font-size: 20px;
+}
+
+.heart-full {
+  position: absolute;
+  color: transparent;
+  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  right: 9px;
+  top: 18px;
+  font-size: 21px;
+  transition: transform 0.8s;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.heart-icons:hover .heart-full {
+  transform: scale(1);
 }
 
 footer .fa-solid {
@@ -92,6 +117,7 @@ footer .fa-solid {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: relative;
 }
 .card-restaurant .card-content.card-text {
   display: flex;

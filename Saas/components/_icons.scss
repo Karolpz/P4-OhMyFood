@@ -7,9 +7,31 @@
     color: $location-icon;
 }
 
-.fa-heart{
+
+.fa-regular {
     font-size: $big-icon;
-} 
+}
+
+.heart-full {
+    position: absolute;
+    color: transparent;
+    background: $background-gradient;
+    background-clip: text;
+    right: 9px;
+    top: 18px;
+    font-size: 21px;
+    transition: transform 0.8s;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.heart-icons:hover .heart-full {
+    transform: scale(1);
+}
+
+
+
+
 
 footer .fa-solid {
     font-size: $small-icon;
