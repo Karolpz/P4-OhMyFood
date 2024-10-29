@@ -3,25 +3,51 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 50%; /* 1rem = 8px */
+}
+
+//layouts
+
+footer {
+    font-size: 1.6rem;
+}
+
 
 //Title
 h1, h2{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 //text
-.reservation p {
-    font-size: 18px;
+p {
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
+//components
+
 button {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
 }
+
+//media queries
+
+@media (min-width: 768px) {
+    html {
+      font-size: 56.25%; /* 1rem = 9px */
+    }
+  }
+
+@media (min-width: 1024px) {
+    html {
+      font-size: 62.5%; /* 1rem = 10px */
+    }
+  }

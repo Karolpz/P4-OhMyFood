@@ -7,7 +7,7 @@ form {
 form input {
   border: none;
   background-color: #EAEAEA;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -62,7 +62,7 @@ form input {
 
 .icon-fonction {
   color: #7E7E7E;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .fa-location-dot {
@@ -70,7 +70,7 @@ form input {
 }
 
 .fa-regular {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .heart-full {
@@ -91,7 +91,7 @@ form input {
 }
 
 footer .fa-solid {
-  font-size: 13px;
+  font-size: 1.3rem;
   width: 15px;
 }
 
@@ -132,26 +132,44 @@ footer .fa-solid {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  font-size: 50%; /* 1rem = 8px */
+}
+
+footer {
+  font-size: 1.6rem;
+}
+
 h1, h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
-.reservation p {
-  font-size: 18px;
+p {
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 button {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -244,7 +262,7 @@ footer ul li.link-bold {
 footer ul li.link-thin {
   font-weight: 300;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
   }
