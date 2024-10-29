@@ -1,13 +1,33 @@
-.fonctionnement {
+.fonctionnement, .buttons-bar {
     @include flex-column;
     gap: 20px;
 
     & .buttons-flex{
         display: flex;
-        gap: 25px;
+        gap: 20px;
     }
     
     & button:hover i {
         color: $primary-color;
     }
 }
+
+@media (min-width: 1024px) {
+
+.fonctionnement{
+     padding: $paddingdesktop;
+
+     & .buttons-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        .buttons-flex {
+            padding-right: 0;
+        }
+     }
+   }
+}    
+             
+
+

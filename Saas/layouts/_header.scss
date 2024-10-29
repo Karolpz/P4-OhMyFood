@@ -24,6 +24,12 @@
             box-shadow: $box-shadow-strong;
             padding: 15px;
         }
+
+        @media (min-width: 1024px) {
+            .border-shadow-header, .formulaire {
+                box-shadow: none;
+            }
+        }
     }
 
 
