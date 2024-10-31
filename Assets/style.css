@@ -1,3 +1,51 @@
+@keyframes slidein {
+  from {
+    margin-left: -70px;
+    width: 100%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.button-rounded-purple {
+  transition: opacity 200ms, box-shadow 300ms;
+}
+.button-rounded-purple:hover {
+  opacity: 0.7;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.button-check {
+  transition: width 0.3s ease-out;
+}
+
+.global-menu a:hover .button-check {
+  width: 59px;
+}
+
+.fa-circle-check {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.global-menu a:hover .fa-circle-check {
+  animation-name: slidein;
+  animation-duration: 0.8s;
+  opacity: 1;
+}
+
+.heart-full {
+  transition: transform 0.3s, opacity 0.5s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.heart-icons:hover .heart-full {
+  transform: scale(1);
+  opacity: 1;
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -19,11 +67,6 @@ form input {
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   cursor: pointer;
-  transition: opacity 300ms 150ms, box-shadow 400ms 150ms;
-}
-.button-rounded-purple:hover {
-  opacity: 0.7;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .button-rounded-white {
@@ -43,7 +86,7 @@ form input {
   border-radius: 50%;
   color: white;
   padding: 3px 8px;
-  size: 14px;
+  font-size: 14px;
   left: -12px;
 }
 
@@ -60,6 +103,15 @@ form input {
   top: 13px;
 }
 
+.button-check {
+  background-color: #99E2D0;
+  text-align: center;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  height: 69px;
+  cursor: pointer;
+}
+
 .icon-fonction {
   color: #7E7E7E;
   font-size: 2rem;
@@ -67,10 +119,20 @@ form input {
 
 .fa-location-dot {
   color: #353535;
+  font-size: 2rem;
+}
+
+.fa-arrow-left {
+  font-size: 2.5rem;
+  color: #353535;
 }
 
 .fa-regular {
   font-size: 2rem;
+}
+
+.heart-icons {
+  position: relative;
 }
 
 .heart-full {
@@ -79,15 +141,10 @@ form input {
   background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
   -webkit-background-clip: text;
           background-clip: text;
-  right: 9px;
-  top: 22px;
-  font-size: 22px;
-  transition: transform 0.4s;
-  transform: scale(0);
-}
-
-.heart-icons:hover .heart-full {
-  transform: scale(1);
+  font-size: 2.2rem;
+  top: -3px;
+  left: -1px;
+  cursor: pointer;
 }
 
 footer .fa-solid {
@@ -95,7 +152,13 @@ footer .fa-solid {
   width: 15px;
 }
 
-.card-restaurant {
+.fa-circle-check {
+  color: white;
+  padding: 23px 0;
+  font-size: 2.5rem;
+}
+
+.cards {
   border-radius: 15px;
   display: flex;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -103,7 +166,7 @@ footer .fa-solid {
   flex-direction: column;
   position: relative;
 }
-.card-restaurant img {
+.cards img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 174px;
@@ -112,20 +175,35 @@ footer .fa-solid {
   border-top-right-radius: 20px;
 }
 @media (min-width: 768px) {
-  .card-restaurant img {
+  .cards img {
     height: 240px;
   }
 }
-.card-restaurant .card-content {
+.cards .card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 10px;
   position: relative;
 }
-.card-restaurant .card-content.card-text {
+.cards .card-content.card-text {
   display: flex;
   flex-direction: column;
+}
+
+.logo-site {
+  width: 197px;
+  height: 36px;
+  margin: 20px;
+}
+
+.image-header {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 383px;
+  width: 100%;
+  z-index: -1;
 }
 
 * {
@@ -150,9 +228,26 @@ h3 {
   font-weight: 700;
 }
 
+.title-menu {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.subtitle-menu {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
 p {
   font-size: 1.8rem;
   font-weight: 300;
+}
+
+.value p {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 button {
@@ -209,11 +304,6 @@ header .border-shadow-header {
   text-align: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   position: sticky;
-}
-header img {
-  width: 197px;
-  height: 36px;
-  margin: 20px;
 }
 header .formulaire {
   width: 100%;
@@ -331,5 +421,76 @@ footer ul li.link-thin {
   }
   .restaurants .restaurants-list a {
     flex-basis: 45%;
+  }
+}
+
+.header-menu a {
+  position: absolute;
+  left: 23px;
+  top: 28px;
+}
+
+.global-menu {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -30px;
+  position: relative;
+}
+.global-menu .title-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.global-menu .subtitle-menu {
+  margin: 40px 0 15px 0;
+}
+.global-menu .subtitle-menu::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+  width: 5rem;
+}
+.global-menu .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.global-menu .menu-list .value {
+  padding-top: 20px;
+}
+.global-menu .cards {
+  height: 69px;
+}
+.global-menu .cards .card-content-check {
+  display: flex;
+  justify-content: space-between;
+}
+.global-menu .cards .card-content-check .card-content {
+  width: 100%;
+}
+.global-menu .cards .card-content-check .card-content .card-text {
+  width: 85%;
+}
+.global-menu .cards .card-content-check .card-content .card-text h3, .global-menu .cards .card-content-check .card-content .card-text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.global-menu .button-rounded-purple {
+  padding: 15px 50px;
+  margin: auto;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .global-menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .global-menu .title-line {
+    justify-content: center;
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

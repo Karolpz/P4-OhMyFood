@@ -1,8 +1,9 @@
-//Cards restaurants//
-.card-restaurant {
+
+.cards {
     @include cards;
     flex-direction: column;
     position: relative;
+    
     
     & img {
         object-fit: cover;
@@ -24,7 +25,8 @@
         position: relative;
 
         &.card-text {
-            @include flex-column
+            @include flex-column;
+            
         }
 
     }

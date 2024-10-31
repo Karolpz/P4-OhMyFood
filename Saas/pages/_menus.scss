@@ -1,0 +1,89 @@
+//header
+.header-menu a {
+        position: absolute;
+        left: 23px;
+        top: 28px;
+}
+
+//section
+.global-menu {
+    background-color: $background-grey-light;
+    border-radius: 40px 40px 0 0;
+    margin-top: -30px;
+    position: relative;
+
+    & .title-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+    & .subtitle-menu {
+        margin: 40px 0 15px 0;
+
+        &::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid $tertiary-color;
+        width: 5rem;
+        }
+    }
+
+    & .menu-list {
+        @include flex-column;
+        gap : 12px;
+
+            & .value {
+                padding-top: 20px;
+            }
+         }
+
+    & .cards{
+        height: 69px;
+
+        & .card-content-check {
+            display: flex;
+            justify-content: space-between;
+
+            & .card-content {
+                width: 100%;
+
+                & .card-text {
+                    width: 85%;
+
+                    & h3, p {
+                    overflow: hidden; 
+                    white-space: nowrap; 
+                    text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+    & .button-rounded-purple {
+        padding: 15px 50px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    @media (min-width : 768px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        & .title-line {
+            justify-content: center;
+            gap: 20px;
+        }
+       
+    }
+}
+
+
+
+
+
+

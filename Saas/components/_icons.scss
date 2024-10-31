@@ -5,6 +5,12 @@
 
 .fa-location-dot {
     color: $location-icon;
+    font-size: $big-icon;
+}
+
+.fa-arrow-left {
+    font-size: $bigger-icon;
+    color: $background-black;
 }
 
 
@@ -12,24 +18,28 @@
     font-size: $big-icon;
 }
 
+.heart-icons {
+    position: relative;
+}
+
 .heart-full {
     position: absolute;
     color: transparent;
     background: $background-gradient;
     background-clip: text;
-    right: 9px;
-    top: 22px;
-    font-size: 22px;
-    transition: transform 0.4s;
-    transform: scale(0);
+    font-size: 2.2rem;
+    top: -3px;
+    left: -1px;
+    cursor: pointer;
 }
-
-.heart-icons:hover .heart-full {
-    transform: scale(1);
-}
-
 
 footer .fa-solid {
     font-size: $small-icon;
     width: 15px;
+}
+
+.fa-circle-check {
+    color: white;
+    padding: 23px 0;
+    font-size: $bigger-icon;
 }

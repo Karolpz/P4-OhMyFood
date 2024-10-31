@@ -1,0 +1,56 @@
+@keyframes slidein {
+    from {
+      margin-left: -70px;
+      width: 100%;
+    }
+  
+    to {
+      margin-left : 0;
+      width: 100%;
+
+    }
+  }
+
+  
+//***SURVOL BOUTON**\\
+.button-rounded-purple{
+    transition: opacity 200ms, box-shadow 300ms;
+    
+    &:hover{
+    opacity: 0.7;
+    box-shadow: 0px 4px 10px 0px rgba(darken($shadow-color, 50%), 0.6);
+    }
+}
+
+.button-check {
+    transition: width 0.3s ease-out;
+}
+
+.global-menu a:hover .button-check{
+    width: 59px;
+}
+.fa-circle-check {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.global-menu a:hover .fa-circle-check{
+    animation-name: slidein ;
+    animation-duration: 0.8s;  
+    opacity: 1;
+}
+
+
+//***COEUR**\\
+.heart-full{
+    transition: transform 0.3s, opacity 0.5s;
+    opacity: 0;
+    transform: scale(0);  
+}
+
+.heart-icons:hover .heart-full {
+    transform: scale(1);
+    opacity: 1;
+}
+
+

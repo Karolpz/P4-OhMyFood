@@ -1,12 +1,14 @@
 //Import utils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 
 //Import components
 @import "./components/form";
 @import "./components/button";
 @import "./components/icons";
 @import "./components/cards";
+@import "./components/images";
 
 // Import base
 @import "./base/typography";
@@ -19,3 +21,7 @@
 @import "./layouts/footer";
 @import "./layouts/section-fonctionnement";
 @import "./layouts/section-restaurants";
+
+//Import pages
+@import "./pages/index";
+@import "./pages/menus";

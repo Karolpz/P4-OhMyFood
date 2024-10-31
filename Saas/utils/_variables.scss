@@ -2,6 +2,7 @@
 $primary-color: #9356DC ;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
+$shadow-color : #000000;
 
 //background
 $background-white : #FFFFFF;
@@ -21,6 +22,7 @@ $location-icon :$background-black;
 $buttons-icon :#7E7E7E;
 $footer-icon :$background-white;
     //icon sizes
+    $bigger-icon : 2.5rem;
     $big-icon: 2rem;
     $small-icon : 1.3rem;
 
