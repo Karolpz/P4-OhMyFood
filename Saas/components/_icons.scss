@@ -13,7 +13,6 @@
     color: $background-black;
 }
 
-
 .fa-regular {
     font-size: $big-icon;
 }
@@ -42,4 +41,11 @@ footer .fa-solid {
     color: white;
     padding: 23px 0;
     font-size: $bigger-icon;
+}
+
+//***LOADER***\\\
+.loader-animation i {
+    z-index: 1000;
+    font-size: 50px;
+    color: $tertiary-color;
 }

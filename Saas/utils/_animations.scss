@@ -1,3 +1,15 @@
+//***SURVOL BOUTON***\\
+.button-rounded-purple{
+    transition: opacity 200ms, box-shadow 300ms;
+    
+    &:hover{
+    opacity: 0.7;
+    box-shadow: 0px 4px 10px 0px rgba(darken($shadow-color, 50%), 0.6);
+    }
+}
+
+
+//***LISTE MENU***\\
 @keyframes slidein {
     from {
       margin-left: -70px;
@@ -9,18 +21,7 @@
       width: 100%;
 
     }
-  }
-
-  
-//***SURVOL BOUTON**\\
-.button-rounded-purple{
-    transition: opacity 200ms, box-shadow 300ms;
-    
-    &:hover{
-    opacity: 0.7;
-    box-shadow: 0px 4px 10px 0px rgba(darken($shadow-color, 50%), 0.6);
-    }
-}
+  } 
 
 .button-check {
     transition: width 0.3s ease-out;
@@ -40,8 +41,34 @@
     opacity: 1;
 }
 
+//***PAGE MENU***\\
+@keyframes subtitlemenu {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
-//***COEUR**\\
+@keyframes menulist {
+    0% {transform: translateX(-500px);}
+    100% {transform: translateX(0);}
+}
+
+.subtitle-menu {
+    animation: subtitlemenu 1s;
+}
+
+.menu-anim1 {
+    animation: menulist 0.4s ease-in-out forwards;
+}
+.menu-anim2 {
+    animation: menulist 0.7s ease-in-out forwards;
+}
+
+.menu-anim3 {
+    animation: menulist 1s ease-in-out forwards;
+}
+
+
+//***COEUR***\\
 .heart-full{
     transition: transform 0.3s, opacity 0.5s;
     opacity: 0;
@@ -52,5 +79,54 @@
     transform: scale(1);
     opacity: 1;
 }
+
+//***LOADER***\\
+
+@keyframes loader {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+@keyframes loaderanimation {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-20px); }
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background: $background-gradient;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: loader 2s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .loader-animation {
+        display: flex;
+        gap: 10px;
+
+        & .icon-fork{
+            animation: loaderanimation 0.7s ease-in infinite;         
+        }
+
+        & .icon-glass {
+            animation: loaderanimation 0.7s ease-in infinite 0.2s;
+        }
+
+        & .icon-food {
+            animation: loaderanimation 0.7s ease-in infinite 0.4s;
+        }
+    }
+}
+
+
+
 
 
