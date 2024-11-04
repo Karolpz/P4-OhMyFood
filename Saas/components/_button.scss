@@ -1,43 +1,28 @@
 .button-rounded-purple {
-    border-radius: 25px;
-    background: $background-gradient;
-    color: white;
-    padding: 15px;
+    @include button-style (null, white, $shadow-button-purple, 15px, 25px);
     border: none;
-    box-shadow: $shadow-button-purple;
-    cursor: pointer;
+    background: $background-gradient
 }
 
 .button-rounded-white {
+    @include button-style ($background-grey-light, null, $shadow-button-white, 30px, 20px);
     position: relative;
-    border-radius: 20px;
-    background-color: $background-grey-light;
     border: none;
-    box-shadow: $shadow-button-white;
-    padding: 30px;
     width: 100%;
-    cursor: pointer;
 }
 
 .button-number {
+    @include button-style ($primary-color, white, null, 3px 8px, 50%);
     position: absolute;
-    background-color: $primary-color;
-    border-radius: 50%;
-    color: white;
-    padding: 3px 8px;
     font-size: 14px;
     left: -12px;
 }
 
-.new-button {
+.new-button { //(span)
+    @include button-style ($tertiary-color, #008766, $box-shadow-light, 5px 10px, 2px);
     position: absolute;
-    background-color: $tertiary-color;
-    color: #008766;
     font-weight: 500;
     font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 2px;
-    box-shadow: $box-shadow-light;
     right: 12px;
     top: 13px;
 }

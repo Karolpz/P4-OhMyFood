@@ -1,0 +1,72 @@
+//***SECTION RESERVATION***\\
+.reservation {
+    text-align: center;
+    @include flex-column;
+    align-items: center;
+    gap: 20px;
+    background-color: $background-grey-light;
+}
+
+
+//***SECTION FONCTIONNEMENT***\\
+.fonctionnement, .buttons-bar {
+    @include flex-column;
+    gap: 20px;
+
+    & .buttons-flex{
+        display: flex;
+        gap: 20px;
+    }
+    
+    & button:hover i {
+        color: $primary-color;
+    }
+}
+
+@media (min-width: 1024px) {
+.fonctionnement{
+     padding: $paddingdesktop;
+
+     & .buttons-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        .buttons-flex {
+            padding-right: 0;
+        }
+     }
+   }
+}  
+
+//***SECTION RESTAURANTS***\\
+.restaurants {
+    background-color: $background-grey-light;
+
+.restaurants-list {
+    @include flex-column;
+    gap:20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    padding: $paddingdesktop;
+}
+
+@media (min-width: 768px) {
+
+        & .restaurants-list {
+            flex-flow: row wrap;
+            justify-content: space-around;
+            gap: 50px;
+
+            & a {
+                flex-basis: 45%;
+                
+            }
+            
+    
+        }
+    }
+}
+  

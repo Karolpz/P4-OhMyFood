@@ -8,7 +8,6 @@
     }
 }
 
-
 //***LISTE MENU***\\
 @keyframes slidein {
     from {
@@ -19,7 +18,6 @@
     to {
       margin-left : 0;
       width: 100%;
-
     }
   } 
 
@@ -30,14 +28,14 @@
 .global-menu a:hover .button-check{
     width: 59px;
 }
+
 .fa-circle-check {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
 
 .global-menu a:hover .fa-circle-check{
-    animation-name: slidein ;
-    animation-duration: 0.8s;  
+    animation: slidein 0.8s;
     opacity: 1;
 }
 

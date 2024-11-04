@@ -10,4 +10,16 @@
     flex-direction: column;
 }
 
+@mixin button-style($bg-color, $text-color, $shadow, $padding, $radius) {
+    background-color: $bg-color;
+    color: $text-color;
+    box-shadow: $shadow;
+    padding: $padding;
+    border-radius: $radius;
+    cursor: pointer;
+}
 
+@mixin icon-style ($icon-color, $size-icon){
+    color: $icon-color;
+    font-size : $size-icon;
+}

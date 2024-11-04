@@ -1,16 +1,14 @@
 .icon-fonction {
-    color: $buttons-icon;
-    font-size: $big-icon;
+    @include icon-style ($buttons-icon, $big-icon);
 }
 
 .fa-location-dot {
-    color: $location-icon;
-    font-size: $big-icon;
+    @include icon-style ($location-icon, $big-icon);
+
 }
 
 .fa-arrow-left {
-    font-size: $bigger-icon;
-    color: $background-black;
+    @include icon-style ($background-black, $bigger-icon);
 }
 
 .fa-regular {
@@ -38,9 +36,8 @@ footer .fa-solid {
 }
 
 .fa-circle-check {
-    color: white;
+    @include icon-style (white, $bigger-icon);
     padding: 23px 0;
-    font-size: $bigger-icon;
 }
 
 //***LOADER***\\\
