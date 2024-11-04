@@ -85,12 +85,12 @@
 @keyframes loader {
     0% { opacity: 1; }
     90% { opacity: 1; }
-    100% { opacity: 0; display: none; }
+    100% { opacity: 0; }
 }
 
 @keyframes loaderanimation {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(-20px); }
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
 }
 
 .loader {
