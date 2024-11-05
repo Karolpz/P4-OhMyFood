@@ -3,17 +3,18 @@
 @import "./utils/mixins";
 @import "./utils/animations";
 
+
+// Import base
+@import "./base/typography";
+@import "./base/reset";
+@import "./base/global";
+
 //Import components
 @import "./components/form";
 @import "./components/button";
 @import "./components/icons";
 @import "./components/cards";
 @import "./components/images";
-
-// Import base
-@import "./base/typography";
-@import "./base/reset";
-@import "./base/global";
 
 //Import layout
 @import "./layouts/header";

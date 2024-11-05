@@ -2,6 +2,7 @@
     @include cards;
     flex-direction: column;
     position: relative;
+    background-color: white;
 
     & .card-content{
         display: flex;
