@@ -1,0 +1,45 @@
+//***LOADER***\\
+@keyframes loader {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes loaderanimation {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background: $background-gradient;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: loader 2s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+    & .loader-animation {
+        display: flex;
+        gap: 10px;
+
+        & .icon-fork{
+            animation: loaderanimation 0.7s ease-in infinite;         
+        }
+
+        & .icon-glass {
+            animation: loaderanimation 0.7s ease-in infinite 0.2s;
+        }
+
+        & .icon-food {
+            animation: loaderanimation 0.7s ease-in infinite 0.4s;
+        }
+    }
+}

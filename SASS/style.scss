@@ -16,6 +16,12 @@
 @import "./components/cards";
 @import "./components/images";
 
+//Import animations
+@import "./animations/button";
+@import "./animations/heart";
+@import "./animations/loader";
+@import "./animations/menu";
+
 //Import layout
 @import "./layouts/header";
 @import "./layouts/footer";

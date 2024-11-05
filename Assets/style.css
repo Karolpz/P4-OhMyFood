@@ -1,131 +1,3 @@
-.button-rounded-purple {
-  transition: opacity 200ms, box-shadow 300ms;
-}
-.button-rounded-purple:hover {
-  opacity: 0.7;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
-}
-
-@keyframes slidein {
-  from {
-    margin-left: -70px;
-    width: 100%;
-  }
-  to {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-.button-check {
-  transition: width 0.3s ease-out;
-}
-
-.global-menu a:hover .button-check {
-  width: 59px;
-}
-
-.fa-circle-check {
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.global-menu a:hover .fa-circle-check {
-  animation: slidein 0.8s;
-  opacity: 1;
-}
-
-@keyframes subtitlemenu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes menulist {
-  0% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.subtitle-menu {
-  animation: subtitlemenu 1s;
-}
-
-.menu-anim1 {
-  animation: menulist 0.4s ease-in-out forwards;
-}
-
-.menu-anim2 {
-  animation: menulist 0.7s ease-in-out forwards;
-}
-
-.menu-anim3 {
-  animation: menulist 1s ease-in-out forwards;
-}
-
-.heart-full {
-  transition: transform 0.3s, opacity 0.5s;
-  opacity: 0;
-  transform: scale(0);
-}
-
-.heart-icons:hover .heart-full {
-  transform: scale(1);
-  opacity: 1;
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loaderanimation {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-.loader {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: loader 2s forwards;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-}
-.loader .loader-animation {
-  display: flex;
-  gap: 10px;
-}
-.loader .loader-animation .icon-fork {
-  animation: loaderanimation 0.7s ease-in infinite;
-}
-.loader .loader-animation .icon-glass {
-  animation: loaderanimation 0.7s ease-in infinite 0.2s;
-}
-.loader .loader-animation .icon-food {
-  animation: loaderanimation 0.7s ease-in infinite 0.4s;
-}
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -275,7 +147,7 @@ form input {
 .button-check {
   background-color: #99E2D0;
   text-align: center;
-  width: 0;
+  width: 0px;
   border-radius: 0 15px 15px 0;
   height: 69px;
   cursor: pointer;
@@ -381,6 +253,132 @@ footer .fa-solid {
   .cards img {
     height: 240px;
   }
+}
+
+.button-rounded-purple {
+  transition: opacity 200ms, box-shadow 300ms;
+}
+.button-rounded-purple:hover {
+  opacity: 0.7;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.heart-full {
+  transition: transform 0.3s, opacity 0.5s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.heart-icons:hover .heart-full {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderanimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: loader 2s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.loader .loader-animation {
+  display: flex;
+  gap: 10px;
+}
+.loader .loader-animation .icon-fork {
+  animation: loaderanimation 0.7s ease-in infinite;
+}
+.loader .loader-animation .icon-glass {
+  animation: loaderanimation 0.7s ease-in infinite 0.2s;
+}
+.loader .loader-animation .icon-food {
+  animation: loaderanimation 0.7s ease-in infinite 0.4s;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-70px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+.button-check {
+  transition: width 0.3s ease-out;
+}
+
+.global-menu a:hover .button-check {
+  width: 59px;
+}
+
+.fa-circle-check {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.global-menu a:hover .fa-circle-check {
+  animation: slidein 0.8s;
+  opacity: 1;
+}
+
+@keyframes subtitlemenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menulist {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.subtitle-menu {
+  animation: subtitlemenu 1s;
+}
+
+.menu-anim1 {
+  animation: menulist 0.4s ease-in-out forwards;
+}
+
+.menu-anim2 {
+  animation: menulist 0.7s ease-in-out forwards;
+}
+
+.menu-anim3 {
+  animation: menulist 1s ease-in-out forwards;
 }
 
 header {
@@ -498,11 +496,6 @@ footer ul li.link-thin {
   gap: 20px;
   margin-top: 20px;
 }
-@media (min-width: 1024px) {
-  .restaurants {
-    padding: 50px 135px;
-  }
-}
 @media (min-width: 768px) {
   .restaurants .restaurants-list {
     flex-flow: row wrap;
@@ -511,6 +504,11 @@ footer ul li.link-thin {
   }
   .restaurants .restaurants-list a {
     flex-basis: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 50px 135px;
   }
 }
 

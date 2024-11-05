@@ -43,30 +43,29 @@
 .restaurants {
     background-color: $background-grey-light;
 
-.restaurants-list {
-    @include flex-column;
-    gap:20px;
-    margin-top: 20px;
-}
+    & .restaurants-list {
+        @include flex-column;
+        gap:20px;
+        margin-top: 20px;
 
-@media (min-width: 1024px) {
-    padding: $paddingdesktop;
-}
 
-@media (min-width: 768px) {
-
-        & .restaurants-list {
+    @media (min-width: 768px) {
             flex-flow: row wrap;
             justify-content: space-around;
             gap: 50px;
 
             & a {
                 flex-basis: 45%;
-                
             }
-            
-    
         }
     }
+
+    @media (min-width: 1024px) {
+            padding: $paddingdesktop;
+        }
 }
+
+
+
+
   
