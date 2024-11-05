@@ -49,6 +49,7 @@
 
             & .card-content {
                 width: 100%;
+                flex-wrap: wrap;
 
                 & .card-text {
                     width: 85%;
@@ -57,6 +58,7 @@
                     overflow: hidden; 
                     white-space: nowrap; 
                     text-overflow: ellipsis;
+                    
                     }
                 }
             }

@@ -1,8 +1,6 @@
 //Import utils
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/animations";
-
 
 // Import base
 @import "./base/typography";
@@ -20,7 +18,7 @@
 @import "./animations/button";
 @import "./animations/heart";
 @import "./animations/loader";
-@import "./animations/menu";
+@import "./animations/menu-cards";
 
 //Import layout
 @import "./layouts/header";

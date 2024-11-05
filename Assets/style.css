@@ -325,14 +325,14 @@ footer .fa-solid {
 
 @keyframes slidein {
   0% {
-    transform: translateX(-70px);
+    transform: translateX(-40px);
   }
   100% {
     transform: translate(0px);
   }
 }
 .button-check {
-  transition: width 0.3s ease-out;
+  transition: width 0.2s ease-out;
 }
 
 .global-menu a:hover .button-check {
@@ -341,7 +341,7 @@ footer .fa-solid {
 
 .fa-circle-check {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-out;
 }
 
 .global-menu a:hover .fa-circle-check {
@@ -556,6 +556,7 @@ footer ul li.link-thin {
 }
 .global-menu .cards .card-content-check .card-content {
   width: 100%;
+  flex-wrap: wrap;
 }
 .global-menu .cards .card-content-check .card-content .card-text {
   width: 85%;
