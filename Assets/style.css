@@ -255,6 +255,17 @@ footer .fa-solid {
   }
 }
 
+footer img {
+  filter: invert(1);
+  width: 98px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  footer img {
+    margin-left: 70px;
+  }
+}
+
 .button-rounded-purple {
   transition: opacity 200ms, box-shadow 300ms;
 }
@@ -412,11 +423,6 @@ footer {
   color: white;
   gap: 20px;
 }
-footer img {
-  filter: invert(1);
-  width: 98px;
-  height: 18px;
-}
 footer ul {
   display: flex;
   flex-direction: column;
@@ -434,9 +440,6 @@ footer ul li.link-thin {
 @media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
-  }
-  footer img {
-    margin-left: 70px;
   }
   footer ul {
     flex-direction: row;
@@ -557,6 +560,7 @@ footer ul li.link-thin {
 .global-menu .cards .card-content-check .card-content {
   width: 100%;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .global-menu .cards .card-content-check .card-content .card-text {
   width: 85%;
