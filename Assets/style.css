@@ -490,7 +490,7 @@ footer ul li.link-thin {
   }
   .fonctionnement .buttons-bar .buttons-flex {
     padding-right: 0;
-    gap: 16px;
+    gap: 15px;
   }
 }
 .restaurants {
@@ -505,7 +505,7 @@ footer ul li.link-thin {
 @media (min-width: 768px) {
   .restaurants .restaurants-list {
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 50px;
   }
   .restaurants .restaurants-list a {
