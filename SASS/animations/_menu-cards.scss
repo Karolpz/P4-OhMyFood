@@ -5,11 +5,12 @@
   } 
 
 .button-check {
-    transition: width 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .global-menu a:hover .button-check{
     width: 59px;
+    visibility: visible;
 }
 
 .fa-circle-check {

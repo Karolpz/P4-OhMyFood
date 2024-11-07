@@ -151,6 +151,7 @@ form input {
   border-radius: 0 15px 15px 0;
   height: 69px;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .icon-fonction {
@@ -314,7 +315,7 @@ footer img {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: loader 2s forwards;
+  animation: loader 2.2s forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,13 +326,13 @@ footer img {
   gap: 10px;
 }
 .loader .loader-animation .icon-fork {
-  animation: loaderanimation 0.7s ease-in infinite;
+  animation: loaderanimation 0.7s cubic-bezier(0.48, 1, 0.56, 0.98) infinite;
 }
 .loader .loader-animation .icon-glass {
-  animation: loaderanimation 0.7s ease-in infinite 0.2s;
+  animation: loaderanimation 0.7s cubic-bezier(0.48, 1, 0.56, 0.98) infinite 0.2s;
 }
 .loader .loader-animation .icon-food {
-  animation: loaderanimation 0.7s ease-in infinite 0.4s;
+  animation: loaderanimation 0.7s cubic-bezier(0.48, 1, 0.56, 0.98) infinite 0.4s;
 }
 
 @keyframes slidein {
@@ -343,11 +344,12 @@ footer img {
   }
 }
 .button-check {
-  transition: width 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .global-menu a:hover .button-check {
   width: 59px;
+  visibility: visible;
 }
 
 .fa-circle-check {
@@ -488,6 +490,7 @@ footer ul li.link-thin {
   }
   .fonctionnement .buttons-bar .buttons-flex {
     padding-right: 0;
+    gap: 16px;
   }
 }
 .restaurants {
