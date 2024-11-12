@@ -353,13 +353,15 @@ footer img {
 }
 
 .fa-circle-check {
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.1s ease-out;
+  transition: opacity 0.2s ease-out, visibility 0.1s;
 }
 
 .global-menu a:hover .fa-circle-check {
   animation: slidein 0.8s;
   opacity: 1;
+  visibility: visible;
 }
 
 @keyframes subtitlemenu {
