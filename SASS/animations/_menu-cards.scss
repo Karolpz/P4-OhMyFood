@@ -5,7 +5,7 @@
   } 
 
 .button-check {
-    transition: all 0.2s ease-out;
+    transition: all 200ms ease-out;
 }
 
 .global-menu a:hover .button-check{
@@ -14,15 +14,15 @@
 }
 
 .fa-circle-check {
-    visibility: hidden;
+    transition: all 200ms ease-in-out;
     opacity: 0;
-    transition: opacity 0.2s ease-out, visibility 0.1s;
+    transform: scale(0);
 }
 
 .global-menu a:hover .fa-circle-check{
-    animation: slidein 0.8s;
+    animation: slidein 700ms;
     opacity: 1;
-    visibility: visible;
+    transform: scale(1);
 }
 
 //***PAGE MENU***\\
